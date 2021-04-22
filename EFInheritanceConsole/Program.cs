@@ -83,6 +83,9 @@ namespace EFInheritanceConsole
                 Console.WriteLine(d);
         }
 
+        // youtube tutorial video link : https://www.youtube.com/watch?v=0ndu7Zhc84Q
+        // video title : EF Core Part 12 - Inheritance
+        // channel title : Coding Tutorials
         static void Main()
         {
             //ShowLocalData();
