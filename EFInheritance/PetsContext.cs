@@ -15,11 +15,12 @@ namespace EFInheritance
 
         }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Dog>().ToTable("Dogs");
-        //    modelBuilder.Entity<Cat>().ToTable("Cats");
-        //}
+        // uncommented, to have a table per type
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Dog>().ToTable("Dogs");
+            modelBuilder.Entity<Cat>().ToTable("Cats");
+        }
 
         public DbSet<Owner> Owners { get; set; }
         public DbSet<Pet> Pets { get; set; }
